@@ -1,6 +1,6 @@
 #!/usr/bin/python
 class filter_module(object):
-    def SomeFilters(self):
+    def filters(self):
         return {
             'a_filter': self.a_filter
         }
