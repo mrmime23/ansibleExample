@@ -1,10 +1,36 @@
 #!/usr/bin/python
-class filter_module(object):
-    def filters(self):
+
+class Expanded_Filter_Module(object):
+    def NewFilters(self):
         return {
-            'a_filter': self.a_filter
+            'new_filter': self.new_filter
         }
 
-    def a_filter(self, a_variable):
-        a_newvariable = a_variable + ' CRAZY NEW FILTER'
-        return a_newvariable
+    def NewFilter(self, new_variable):
+        new_newvariable = new_variable + ' WILD EXPANSION'
+        return new_newvariable
+
+class AnotherModule(object):
+    def __init__(self):
+        self.data = []
+
+    def AddData(self, value):
+        self.data.append(value)
+
+    def ProcessData(self):
+        processed_data = ""
+        for item in self.data:
+            processed_data += str(item) + " PROCESSED "
+        return processed_data
+
+if __name__ == "__main__":
+    filter_instance = ExpandedFilterModule()
+    filters = filter_instance.NewFilters()
+    result = filters['new_filter']('Initial data')
+    print(result)
+
+    another_instance = AnotherModule()
+    another_instance.AddData(10)
+    another_instance.AddData(20)
+    processed_result = another_instance.ProcessData()
+    print(processed_result)
