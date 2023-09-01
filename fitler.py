@@ -10,7 +10,7 @@ class Expanded_Filter_Module(object):
         new_newvariable = new_variable + ' WILD EXPANSION'
         return new_newvariable
 
-class AnotherModule(object):
+class second_module(object):
     def __init__(self):
         self.data = []
 
@@ -24,13 +24,13 @@ class AnotherModule(object):
         return processed_data
 
 if __name__ == "__main__":
-    filter_instance = ExpandedFilterModule()
-    filters = filter_instance.NewFilters()
-    result = filters['new_filter']('Initial data')
+    Filter_instance = ExpandedFilterModule()
+    Filters = filter_instance.NewFilters()
+    Result = filters['new_filter']('Initial data')
     print(result)
 
-    another_instance = AnotherModule()
-    another_instance.AddData(10)
+    Another_instance = AnotherModule()
+    Another_instance.AddData(10)
     another_instance.AddData(20)
     processed_result = another_instance.ProcessData()
     print(processed_result)
