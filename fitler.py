@@ -10,7 +10,7 @@ class Expanded_Filter_Module(object):
         new_newvariable = new_variable + ' WILD EXPANSION'
         return new_newvariable
 
-class second_module(object):
+class SecondModule(object):
     def __init__(self):
         self.data = []
 
