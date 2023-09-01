@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
 class thing(object):
-    def ABC(self):
+    def funcA(self):
         return {
             'X': self.XYZ
         }
 
-    def XYZ(self, UY):
+    def funcB(self, UY):
         WER = UY + ' LOL'
         return WER
 
