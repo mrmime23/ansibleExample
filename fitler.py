@@ -1,36 +1,36 @@
 #!/usr/bin/python
 
-class Expanded_Filter_Module(object):
-    def NewFilters(self):
+class thing(object):
+    def ABC(self):
         return {
-            'new_filter': self.new_filter
+            'X': self.XYZ
         }
 
-    def NewFilter(self, new_variable):
-        new_newvariable = new_variable + ' WILD EXPANSION'
-        return new_newvariable
+    def XYZ(self, UY):
+        WER = UY + ' LOL'
+        return WER
 
-class SecondModule(object):
+class thing2(object):
     def __init__(self):
-        self.data = []
+        self.something = []
 
-    def AddData(self, value):
-        self.data.append(value)
+    def PQR(self, Z):
+        self.something.append(Z)
 
-    def ProcessData(self):
-        processed_data = ""
-        for item in self.data:
-            processed_data += str(item) + " PROCESSED "
-        return processed_data
+    def DFG(self):
+        NML = ""
+        for JK in self.something:
+            NML += str(JK) + " GHI "
+        return NML
 
 if __name__ == "__main__":
-    Filter_instance = ExpandedFilterModule()
-    Filters = filter_instance.NewFilters()
-    Result = filters['new_filter']('Initial data')
-    print(result)
+    A_instance = thing()
+    B = A_instance.ABC()
+    C = B['X']('123')
+    print(C)
 
-    another_instance = AnotherModule()
-    another_instance.AddData(10)
-    another_instance.AddData(20)
-    processed_result = another_instance.ProcessData()
-    print(processed_result)
+    Q_instance = thing2()
+    Q_instance.PQR(100)
+    Q_instance.PQR(200)
+    RST = Q_instance.DFG()
+    print(RST)
