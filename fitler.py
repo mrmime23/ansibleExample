@@ -29,8 +29,8 @@ if __name__ == "__main__":
     Result = filters['new_filter']('Initial data')
     print(result)
 
-    Another_instance = AnotherModule()
-    Another_instance.AddData(10)
+    another_instance = AnotherModule()
+    another_instance.AddData(10)
     another_instance.AddData(20)
     processed_result = another_instance.ProcessData()
     print(processed_result)
